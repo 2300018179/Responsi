@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Antrian Pelanggan - Barbershop By ACDRLAW</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="layanan.html">Layanan Kami</a></li>
+                <li><a href="product.html">Product</a></li>
+                <li><a href="form-antrian.html">Form Antrian</a></li>
+                <li><a href="manager-antrian.php">Daftar Antrian</a></li>
+                <li><a href="galeri.html">Jenis Potongan Rambut</a></li>
+                <li><a href="lokasi.html">Lokasi</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="booking">
+            <h2 align="center">Form Antrian Pelanggan</h2>
+            <form action="submit.php" method="POST" id="bookingForm" onsubmit="return validateForm()">
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email" required><br><br>
+
+                <label for="nama">Nama:</label>
+                <input type="text" id="nama" name="nama" required><br><br>
+                
+                <label for="tanggal">Tanggal Antrian:</label>
+                <input type="date" id="tanggal" name="tanggal" required><br><br>
+                
+                <label for="jam">Jam Antrian:</label>
+                <input type="time" id="jam" name="jam" required><br><br>
+                
+                <button type="submit">Kirim</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

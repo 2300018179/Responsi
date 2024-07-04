@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbershop Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="layanan.html">Layanan Kami</a></li>
+                <li><a href="product.html">Product</a></li>
+                <li><a href="form-antrian.html">Form Antrian</a></li>
+                <li><a href="manager-antrian.php">Daftar Antrian</a></li>
+                <li><a href="galeri.html">Jenis Potongan Rambut</a></li>
+                <li><a href="lokasi.html">Lokasi</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="about">
+            <h2 align="center">About Us</h2>
+            <p>Barbershop By ACDRLAW berdiri pada tahun 2024.Barbershop By ACDRLAW adalah suatu layanan pangkas rambut untuk pria dan wanita. Kami memiliki ahli untuk melayani anda dengan segala request yang di inginkan. Seberat apapun masalahmu jangan lupa pangkas rambut.</p>
+        </section>
+
+        <section id="services">
+            <h2 align="center">Layanan Kami</h2>
+            <div class="services">
+                <img src="gunting.jpg" alt="Haircut">
+                <p>Haircut</p>
+            </div>
+            <div class="services">
+                <img src="catokan.jpg" alt="Haircut">
+                <p>Smoothing</p>
+            </div>
+            <div class="services">
+                <img src="shaving.jpg" alt="Haircut">
+                <p>Shaving</p>
+            </div>
+            <div class="services">
+                <img src="images.png" alt="Haircut">
+                <p>Hairnerds Delivery</p>
+            </div>
+            <div class="services">
+                <img src="roll.jpg" alt="Haircut">
+                <p>Perm</p>
+            </div>
+            <div class="services">
+                <img src="coloring.jpg" alt="Haircut">
+                <p>Coloring</p>
+            </div>
+            <div class="services">
+                <img src="sisir.jpg" alt="Haircut">
+                <p>Other Services</p>
+            </div>
+            <div class="services">
+                <img src="cukur.jpg" alt="Haircut">
+                <p>Cukur Baya Suka - Suka</p>
+            </div>
+        </section>
+
+        <section id="product-info">
+            <h2 align="center">Produk Barbershop By ACDRLAW</h2>
+            <p align="center">Barbershop By ACDRLAW menawarkan berbagai macam produk seperti:</p>
+            <div class="product-info">
+                <img src="powder.jpg" alt="Potongan Rambut 1">
+                <p>Hair Styling Powder</p>
+            </div>
+            <div class="product-info">
+                <img src="paste.jpg" alt="Potongan Rambut 2">
+                <p>Hair Paste</p>
+            </div>
+            <div class="product-info">
+                <img src="waterbase.jpg" alt="Potongan Rambut 3">
+                <p>Waterbased Pomade</p>
+            </div>
+        </section>
+
+        <section id="booking">
+            <h2 align ="center">Form Antrian Pelanggan</h2>
+            <form action="submit.php" method="POST" id="bookingForm" onsubmit="return validateForm()">
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email" required><br><br>
+
+                <label for="nama">Nama:</label>
+                <input type="text" id="nama" name="nama" required><br><br>
+                
+                <label for="tanggal">Tanggal Antrian:</label>
+                <input type="date" id="tanggal" name="tanggal" required><br><br>
+                
+                <label for="jam">Jam Antrian:</label>
+                <input type="time" id="jam" name="jam" required><br><br>
+                
+                <button type="submit">Kirim</button>
+            </form>
+        </section>
+
+        <section id="gallery">
+            <h2 align="center">Jenis Potongan Rambut</h2>
+            <div class="gallery-item">
+                <img src="cth1.jpg" alt="Classic Crew Cut">
+                <p>Classic Crew Cut</p>
+            </div>
+            <div class="gallery-item">
+                <img src="cth2.jpg" alt="Curtain Haircut">
+                <p>Curtain Haircut</p>
+            </div>
+            <div class="gallery-item">
+                <img src="cth3.jpg" alt="Undercut">
+                <p>Undercut</p>
+            </div>
+            <div class="gallery-item">
+                <img src="pt4.jpg" alt="Short Curly Crop Style">
+                <p>Short Curly Crop Style</p>
+            </div>
+            <div class="gallery-item">
+                <img src="pt5.jpg" alt="Mullet">
+                <p>Mullet</p>
+            </div>
+            <div class="gallery-item">
+                <img src="cth6.png" alt="Short Buzz Cut">
+                <p>Short Buzz Cut</p>
+            </div>
+        </section>
+
+        <section id="lokasi-info">
+            <h2 align="center">Lokasi Barbershop By ACDRLAW</h2>
+            <p>Barbershop By ACDRLAW berlokasi di:</p>
+            <address>
+                Jl. Tamanan No. 014<br>
+                Kota Bantul, Provinsi Daerah Istimewa Yogyakarta<br>
+                Kode Pos: 12345
+            </address>
+        </section>
+
+        <section id="contact-info">
+            <h2 align="center">Media Social Kami</h2>
+            <p>Silakan Follow Sosial Media Kami:</p>
+            <ul>
+                <li>Telepon: (123) 456-3527</li>
+                <li>Email: barberby@acdrlaw.com</li>
+                <li>Instagram: @barbershopbyacdrlaw</li>
+                <li>TikTok: barbershopbyacdrlaw</li>
+            </ul>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
